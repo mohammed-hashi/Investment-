@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="so">
+<body>
+    <!-- Madaxa App-ka -->
+    <div class="header">
+        <h1>Cilmi-baaris Kheyraadka Maalgashi ee Somaliland</h1>
+    </div>
+
+    <!-- Menu-ga -->
+    <div class="menu">
+        <a href="#home">Bogga Hore</a>
+        <a href="#resources">Kheyraadka</a>
+        <a href="#research">Cilmi-baarista</a>
+        <a href="#contact">Xidhiidh</a>
+    </div>
+
+    <!-- Qaybta Mawduucyada -->
+    <div class="content" id="home">
+        <h2>Ku Soo Dhawoow App-ka Kheyraadka Maalgashiga</h2>
+        <p>Halkan waxaad ka heli kartaa macluumaad ku saabsan kheyraadka maalgashiga ee Somaliland iyo cilmi-baariso lagu maareeyo.</p>
+    </div>
+
+    <!-- Liiska Kheyraadka -->
+    <div class="content" id="resources">
+        <h2>Kheyraadka Maalgashiga</h2>
+        <div class="resource-card">
+            <h3>Beeraha</h3>
+            <p>Macluumaad ku saabsan beeraha Somaliland iyo fursadaha maalgashiga.</p>
+        </div>
+        <div class="resource-card">
+            <h3>Xoolaha</h3>
+            <p>Fursadaha ganacsiga xoolaha iyo wax soo saarka.</p>
+        </div>
+        <div class="content" id="research">
+        <h2>Cilmi-baarista</h2>
+        <div class="resource-card">
+            <h3>Daraasado</h3>
+            <p>Daawo daraasadaha ugu dambeeyay ee kheyraadka Somaliland.</p>
+            <button>Daawo Daraasad</button>
+        </div>
+    </div>
+
+    <!-- Qaybta Xidhiidhka -->
+    <div class="content" id="contact">
+        <h2>Nala Soo Xidhiidh</h2>
+        <p>Email: info@maalgashiyosl.com</p>
+        <p>Tel: +252 63 1234567</p>
+    </div>
+
+    <!-- Footer-ka -->
+    <div class="footer">
+        <p>© 2023 Cilmi-baaris Kheyraadka Maalgashi ee Somaliland</p>
+    </div>
+
+    <script>
+        // JavaScript for basic interactions
+        document.querySelectorAll('.menu a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
